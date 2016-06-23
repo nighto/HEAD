@@ -4,10 +4,10 @@ Uma lista de tudo que pode ir no `<head>` do seu documento
 
 ## Table of Contents
 
-- [Mínimo Recomendado](#minimo-recomendado)
+- [Mínimo Recomendado](#mínimo-recomendado)
 - [Elementos](#elementos)
 - [Meta](#meta)
-  - [Meta: Não Recomendado](#meta-nao-recomendado)
+  - [Meta: Não Recomendado](#meta-não-recomendado)
 - [Link](#link)
   - [Link: Not Recommended](#link-not-recommended)
   - [Favicons](#favicons)
