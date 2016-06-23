@@ -1,13 +1,13 @@
 # HEAD
 
-A list of everything that could go in the `<head>` of your document
+Uma lista de tudo que pode ir no `<head>` do seu documento
 
 ## Table of Contents
 
-- [Recommended Minimum](#recommended-minimum)
-- [Elements](#elements)
+- [Mínimo Recomendado](#minimo-recomendado)
+- [Elementos](#elementos)
 - [Meta](#meta)
-  - [Meta: Not Recommended](#meta-not-recommended)
+  - [Meta: Não Recomendado](#meta-nao-recomendado)
 - [Link](#link)
   - [Link: Not Recommended](#link-not-recommended)
   - [Favicons](#favicons)
@@ -39,31 +39,31 @@ A list of everything that could go in the `<head>` of your document
 - [Author](#author)
 - [License](#license)
 
-## Recommended Minimum
+## Mínimo Recomendado
 
-Below are the essential tags for basic, minimalist websites:
+Essas são as tags essenciais para websites básicos, minimalistas:
 
 ```html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Page Title</title>
+<!-- As 3 tags meta acima *devem* vir primeiro no head; qualquer outro conteúdo deve vir *após* essas tags -->
+<title>Título da página</title>
 ```
 
-## Elements
+## Elementos
 
 ``` html
-<!-- Document Title -->
-<title>Page Title</title>
+<!-- Título do Documento -->
+<title>Título da Página</title>
 
-<!-- Base URL to use for all relative URLs contained within the document -->
+<!-- URL Base para todas as URLs relativas contidas no documento -->
 <base href="https://example.com/page.html">
 
-<!-- External CSS -->
+<!-- CSS Externo -->
 <link rel="stylesheet" href="styles.css">
 
-<!-- In-document CSS -->
+<!-- CSS Inline -->
 <style>
   /* ... */
 </style>
@@ -78,119 +78,119 @@ Below are the essential tags for basic, minimalist websites:
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- As 3 tags meta acima *devem* vir primeiro no head; qualquer outro conteúdo deve vir *após* essas tags -->
 
-<!-- Allows control over where resources are loaded from -->
+<!-- Permite controlar de onde os recursos são carregados -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-<!-- Place as early in the document as possible -->
-<!-- Only applies to content below this tag -->
+<!-- Coloque o mais pra cima no documento tanto quanto possível -->
+<!-- Só se aplica para o conteúdo após esta tag -->
 
-<!-- Name of web application (only should be used if the website is used as an app) -->
-<meta name="application-name" content="Application Name">
+<!-- Nome da aplicação web (só deve ser usado se o website for usado como um app) -->
+<meta name="application-name" content="Nome da Aplicação">
 
-<!-- Short description of the page (limit to 150 characters) -->
-<!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
-<meta name="description" content="A description of the page">
+<!-- Descrição pequena da página (limitada a 150 caracteres) -->
+<!-- Em *algumas* situações esta descrição é exibida como parte dos resultados de busca. -->
+<meta name="description" content="Uma descrição da página">
 
-<!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<!-- Controla o comportamento dos motores de busca (crawling e indexação) -->
+<meta name="robots" content="index,follow,noodp"><!-- Todos os motores de busca -->
+<meta name="googlebot" content="index,follow"><!-- Específico do Google -->
 
-<!-- Tells Google not to show the sitelinks search box -->
+<!-- Fala para o Google não exibir o campo de busca -->
 <meta name="google" content="nositelinkssearchbox">
 
-<!-- Tells Google not to provide a translation for this page -->
+<!-- Fala para o Google não exibir traduções para esta página -->
 <meta name="google" content="notranslate">
 
-<!-- Verify ownership for Google Search Console -->
+<!-- Verifica propriedade para o Google Search Console -->
 <meta name="google-site-verification" content="verification_token">
 
-<!-- Used to name software used to build the website (i.e. - Wordpress, Dreamweaver) -->
+<!-- Usado para nomear o software utilizado para construir o website (por ex: WordPress, Dreamweaver) -->
 <meta name="generator" content="program">
 
-<!-- Short description of your site's subject -->
-<meta name="subject" content="your website's subject">
+<!-- Pequena descrição do assunto do seu site -->
+<meta name="subject" content="assunto do seu site">
 
-<!-- Very short sentence describing the purpose of the website -->
+<!-- Frase resumida descrevendo o propósito do seu site -->
 <meta name="abstract" content="">
 
-<!-- Describes the topic of the website -->
+<!-- Descreve o tópico do seu website -->
 <meta name="topic" content="">
 
-<!-- Brief summary of the company or purpose of the website -->
+<!-- Breve sumário da companhia ou propósito do website -->
 <meta name="summary" content="">
 
-<!-- A deprecated tag that does the same as the keywords meta tag -->
+<!-- Uma tag obsoleta que faz o mesmo que a meta tag keywords -->
 <meta name="classification" content="business">
 
-<!-- Full domain name or web address -->
+<!-- Nome de domínio ou endereço web completo -->
 <meta name="url" content="https://example.com/">
 
-<!-- Does the same as URL, older and not supported -->
+<!-- Faz o mesmo que URL, mais velho e não suportado -->
 <meta name="identifier-URL" content="https://example.com/">
 
 <meta name="directory" content="submission">
 
-<!-- Does the same function as the keywords tag -->
+<!-- Tem a mesma função que a tag keywords -->
 <meta name="category" content="">
 
-<!-- Makes sure your website shows up in all countries and languages -->
+<!-- Especifica que seu site deve aparecer em todos os países e idiomas -->
 <meta name="coverage" content="Worldwide">
 
-<!-- Does the same as the coverage tag -->
+<!-- Faz o mesmo que a tag coverage -->
 <meta name="distribution" content="Global">
 
-<!-- Gives a general age rating based on sites content -->
+<!-- Especifica a faixa etária da audiência do site baseado no seu conteúdo -->
 <meta name="rating" content="General">
 
-<!-- Allows control over how referrer information is passed -->
+<!-- Permite controlar como a informação sobre o referrer é passada -->
 <meta name="referrer" content="never">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- Desabilita a detecção e formatação automática de possíveis números de telefone -->
 <meta name="format-detection" content="telephone=no">
 
 <!-- Geo tags -->
 <meta name="ICBM" content="latitude, longitude">
 <meta name="geo.position" content="latitude;longitude">
-<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
+<meta name="geo.region" content="país[-estado]"><!-- Código do país (ISO 3166-1): obrigatório, código do estado (ISO 3166-2): opcional; ex. content="BR" / content="BR-RJ" -->
+<meta name="geo.placename" content="cidade/país"><!-- ex. content="Rio de Janeiro" -->
 ```
 
-- [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
+- [Meta tags que o Google entende](https://support.google.com/webmasters/answer/79812?hl=en)
 - [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
-- [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
-- [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
+- [ICBM na Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
+- [Geotagging ba Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-### Meta: Not Recommended
-Below are the meta attributes which are not recommended for use:
+### Meta: Não Recomendado
+A seguir as tags meta que não tem o uso recomendadas:
 
 ```html
-<!-- Used to declare the document language, but not well supported. Better to use <html lang=""> -->
-<meta name="language" content="en">
+<!-- Usado para declarar o idioma do documento, mas não tão bem suportado. Melhor usar <html lang=""> -->
+<meta name="language" content="pt">
 
-<!-- Google disregards & Bing considers it an indicator of spam -->
-<meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
+<!-- Google desconsidera & Bing considera como um indicador de spam -->
+<meta name="keywords" content="palavras,chave,separadas,com,vírgulas,e,sem,espaços">
 
-<!-- No evidence of current use in any search engines -->
+<!-- Não há evidência de utilização pelos serviços de busca atuais -->
 <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 
-<!-- Provides an easy way for spam bots to harvest email addresses -->
-<meta name="reply-to" content="email@example.com">
+<!-- É uma maneira muito fácil de bots de spam conseguir endereços de email -->
+<meta name="reply-to" content="email@exemplo.com.br">
 
-<!-- Better to use <link rel="author"> or humans.txt file -->
-<meta name="author" content="name, email@example.com">
+<!-- É melhor usar <link rel="author"> ou um arquivo humans.txt -->
+<meta name="author" content="nome, email@exemplo.com.br">
 <meta name="designer" content="">
 <meta name="owner" content="">
 
-<!-- Tells search bots to revisit the page after a period. This is not supported because most Search Engines now use random intervals for re-crawling a webpage -->
+<!-- Diz para os motores de busca revisitarem a página após um certo período. Isto não é mais utilizado porque a maioria dos motores de busca atualmente utilizam intervalos aleatórios para verificar mudanças no conteúdo. -->
 <meta name="revisit-after" content="7 days">
 
-<!-- Sends user to a new URL after a certain amount of time -->
-<!-- The W3C recommends that this tag not be used. Google recommends using a server-side 301 redirect instead. -->
-<meta http-equiv="refresh" content="300; url=https://example.com/">
+<!-- Envia o usuário para uma nova URL após um certo período de tempo -->
+<!-- O W3C recomenda que essa tag não seja usada. O Google recomenda usar um redirecionamento de servidor 301. -->
+<meta http-equiv="refresh" content="300; url=https://exemplo.com.br/">
 
-<!-- Cache Control -->
-<!-- Better to configure cache control server side -->
+<!-- Controle de Cache -->
+<!-- É melhor configurar o controle de cache do lado do servidor -->
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
